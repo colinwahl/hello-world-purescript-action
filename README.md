@@ -1,6 +1,11 @@
 # Hello world PureScript action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log. This is a [PureScript](https://github.com/purescript/purescript) port of "[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)" in the GitHub Help documentation.  This repository serves as a template for creating more advanced Actions in [PureScript](https://github.com/purescript/purescript).
+This action prints "Hello World" or "Hello" + the name of a person to greet to the log. This is a [PureScript](https://github.com/purescript/purescript) port of "[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)" in the GitHub Help documentation.  
+
+# Usage
+
+This repository serves as a template for creating more advanced Actions in [PureScript](https://github.com/purescript/purescript).  
+To create your own [Action](https://github.com/features/actions) via PureScript, expand this template by defining your Action in PureScript in the `src` directory. Once that is defined, you can update `action.yml` to specify usage. Then you just need to run `npm run-script build` to bundle your PureScript Action into the `dist/index.js` file before publishing!
 
 ## Inputs
 
