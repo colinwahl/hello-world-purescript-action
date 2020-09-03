@@ -12,3 +12,6 @@ jobs:
       uses: ./
       with:
         who-to-greet: 'PureScript User'
+    # Use the output from the `hello` step
+    - name: Get a description of the PureScript language
+      run: echo "What is PureScript? ${{ steps.hello.outputs.what-is-purescript }}"
