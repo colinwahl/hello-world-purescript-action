@@ -16,6 +16,7 @@ main = do
     name <- Core.getInput { name: "who-to-greet", options: Just { required: true } }
     liftEffect $ Core.info $ "Hello, " <> name <> "!"
   case result of
-    Right _ -> mempty
+    Right _ -> do
+      Core.setOutput { name: "what-is-purescript", value: "A small strongly typed programming language with expressive types that compiles to JavaScript, written in and inspired by Haskell." }
     Left err -> do
       Core.setFailed $ message err
