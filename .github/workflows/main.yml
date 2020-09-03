@@ -7,6 +7,6 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: hello-world-purescript-action
+      uses: hello-world-purescript-action@v0.1
       with:
         who-to-greet: 'PureScript User'
